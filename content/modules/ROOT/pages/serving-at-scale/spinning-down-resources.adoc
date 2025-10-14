@@ -17,7 +17,7 @@ OpenShift AI 2.23 adds an option the the OpenShift AI Dashboard to scale down a 
 ----
 oc annotate inferenceservice granite-8b "serving.kserve.io/stop"="true" --overwrite -n vllm
 oc annotate inferenceservice granite-guardian "serving.kserve.io/stop"="true" --overwrite -n vllm
-oc annotate inferenceservice granite-vllm-multi-node-llama "serving.kserve.io/stop"="true" --overwrite -n vllm
+oc annotate inferenceservice vllm-multi-node-llama "serving.kserve.io/stop"="true" --overwrite -n vllm
 ----
 
 . Verify the model servers successfully stop:
